@@ -45,8 +45,9 @@ body {
 }
 
 .content {
-  width: 100%;
+  width: 80%;
   min-height: 80vh;
+  margin: auto;
 }
 
 .main-container {
