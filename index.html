@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <section id="Inicio">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MusicMania - O Seu Destino Musical Online</title>
+      <link rel="icon" href="/img//logo.ico" type="image/x-icon" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/photo.css" />
+      <link rel="stylesheet" href="css/notFound.css" />
+    </head>
+  </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MusicMania - O Seu Destino Musical Online</title>
-  <link rel="icon" href="/img//logo.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/photo.css" />
-  <link rel="stylesheet" href="css/notFound.css" />
-</head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header-container">
+      <!-- Definir caminho da imagem, exemplo abaixo -->
+      <div class="logo-container">
+        <img src="img/logoWhite.png" alt="logo music" width="250px" />
+      </div>
+      <nav class="nav-container">
+        <a href="#main" class="nav-item">Início</a>
+        <a href="#notfound" class="nav-item">Linha do tempo</a>
+        <a href="#notfound" class="nav-item">Redes Sociais</a>
+      </nav>
+    </header>
 
-<body>
-  <!-- Cabeçalho -->
-  <header class="header-container">
-    <!-- Definir caminho da imagem, exemplo abaixo -->
-    <div class="logo-container">
-      <img src="img/logoWhite.png" alt="logo music" width="250px" />
+    <!-- Container genérico com informações das páginas -->
+    <div class="content-container">
+      <!-- Essa div serve como container da imagem de fundo -->
+      <div id="cover"></div>
+      <div class="loading-message">
+        <div class="loading-text">Carregando...</div>
+      </div>
+      <!-- Todo conteúdo será injetado aqui -->
+      <section class="content"></section>
     </div>
-    <nav class="nav-container">
-      <a href="#main" class="nav-item">Sessões</a>
-      <a href="#notfound" class="nav-item">Linha do tempo</a>
-      <a href="#notfound" class="nav-item">Redes Sociais</a>
-    </nav>
-  </header>
 
-  <!-- Container genérico com informações das páginas -->
-  <div class="content-container">
-    <!-- Essa div serve como container da imagem de fundo -->
-    <div id="cover"></div>
-    <div class="loading-message">
-      <div class="loading-text">Carregando...</div>
-    </div>
-    <!-- Todo conteúdo será injetado aqui -->
-    <section class="content"></section>
-  </div>
+    <footer class="footer-container">
+      <h3>
+        <a class="social" href="#Inicio">Início</a>
+      </h3>
+      <h3>Siga-nos nas redes sociais:</h3>
+      <ul>
+        <a class="social" href="#notfound">Facebook</a>
+        <a class="social" href="#notfound">Instagram</a>
+        <a class="social" href="#notfound">Twitter</a>
+      </ul>
+      <p>Obrigado por nos escolher como o seu destino musical online!</p>
+      <p>© 2024 Music Mania. Todos os Direitos Reservados</p>
+    </footer>
 
-  <footer class="footer-container">
-    <h3>Siga-nos nas redes sociais:</h3>
-    <ul>
-      <a class="social" href="#notfound">Facebook</a>
-      <a class="social" href="#notfound">Instagram</a>
-      <a class="social" href="#notfound">Twitter</a>
-    </ul>
-    <p>Obrigado por nos escolher como o seu destino musical online!</p>
-    <p>© 2024 Music Mania. Todos os Direitos Reservados</p>
-  </footer>
-
-  <script src="js/utils.js"></script>
-  <script src="js/photo.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/utils.js"></script>
+    <script src="js/photo.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
