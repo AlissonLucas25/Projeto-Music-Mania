@@ -1,0 +1,275 @@
+/* Limpeza geral dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  color: #4a4141;
+}
+
+.header-container {
+  /* No lugar de definir o brightness no body, pode definir o cor no header mesmo */
+  background-color: #333;
+  /* Pode centralizar os elementos utilizando flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed; /*header fixo*/
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.logo-container {
+  padding: 20px;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 10rem;
+}
+
+.content {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Para colocar a opacidade apenas na imagem, precisa separar ela do body */
+#cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 10%; /*Aqui controla a opacidade*/
+  z-index: 0; /*Controla a ordem empilhada de elementos*/
+}
+
+nav {
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(15, 1, 1, 0.8);
+  /* Os elementos do nav nao precisam ser absolutos pq estao dentro do flex */
+  /*
+    position: absolute;
+    bottom: 0;
+    */
+}
+
+.nav-container {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* É interessante usar classes css para deixar o código mais limpo e auto explicativo */
+.nav-item {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #f9d423;
+}
+
+.divisor {
+  width: 100%;
+  border-color: #e8eae9;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.music-container,
+.news-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title-h1 {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.link {
+  width: fit-content; /* Define o mesmo tamanho para todos os botões */
+  text-align: left; /* Alinha à esquerda */
+  text-decoration: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: #ccc;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315); /*Controla a sombra*/
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container h3 {
+  color: white;
+}
+
+.footer-container p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social:hover {
+  color: #f9d423;
+}
+
+button:hover,
+a.button:hover {
+  display: flex;
+  right: 0cqb;
+  background-color: #f9d423;
+  transform: scale(1.05);
+}
+
+/* Estilo para a mensagem de loading */
+.loading-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+/* Estilos de outras páginas poderiam ficar em css separados */
+.secondary-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2e2e2e;
+  border: 1px solid #555;
+  box-shadow: 0 0 10px rgba(39, 38, 38, 0.5);
+}
+
+.search-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100px;
+  border: 1px solid #555;
+  border-radius: 1px;
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff4e50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #f9d423;
+}
+
+.logo {
+  font-size: 48px;
+  padding: auto;
+  font-weight: bold;
+  padding: 100%;
+  color: #f9d423;
+  text-shadow: 2px 2px #ff4e50;
+}
+
+section-inicio {
+  color: #2e2e2e;
+}

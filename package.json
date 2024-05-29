@@ -1,0 +1,23 @@
+{
+  "name": "projeto-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000 -c-1 -o index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlissonLucas25/Projeto-Music-Mania.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlissonLucas25/Projeto-Music-Mania/issues"
+  },
+  "homepage": "https://github.com/AlissonLucas25/Projeto-Music-Mania#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
